@@ -1,0 +1,28 @@
+/* Page Widths */
+@import '../../../../styles/base/mixins';
+@import '../../../../styles/base/variables';
+
+.page-container {
+    margin: 0 auto;
+    padding: 0;
+    @include container;
+}
+header{
+    margin: 0;
+    padding: 0;
+    padding-bottom: $baseGap;
+} 
+main {
+    @extend header;
+}
+footer {
+    @extend header;
+    @include a11y;
+}
+nav {
+    display: flex;
+    min-height: 75px;
+
+    background-color: $navbarBG;
+    @include center;
+}

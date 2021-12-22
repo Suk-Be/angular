@@ -1,0 +1,11 @@
+<ul *ngIf="isDisplayed">
+  <li *ngFor="let category of categories">
+    <h2 class="category">
+      {{category.name}}
+    </h2>
+    
+    <div *ngFor="let article of category.articles">
+      <img *ngIf="article" src="{{article.image}}" /> 
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,19 @@
+@import '../../../styles/base/variables';
+@import '../../../styles/base/mixins';
+
+a {
+  @include transition;
+  background: $green;
+  border-radius: $borderRadius;
+  color: $white;
+  cursor: pointer;  
+  padding: 0.5rem $baseGap;
+  text-align: center;
+  text-transform: none;
+}
+
+a:hover,
+// for mobile xp
+a:active {
+  color: $black;
+}

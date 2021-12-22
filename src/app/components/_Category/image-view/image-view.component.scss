@@ -1,0 +1,42 @@
+@import "../../../../styles/base/variables";
+@import "../../../../styles/base/mixins";
+
+@include img();
+
+h2 {
+  @include a11y;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+
+  @media screen and (min-width: $tabletBP) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+li {
+  background-color: $contentBG;
+  padding: 0.9375rem;
+
+  @include center;
+
+  div:nth-child(even) {
+    padding-right: $baseGap;
+  }
+}

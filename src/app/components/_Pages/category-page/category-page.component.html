@@ -1,0 +1,22 @@
+<header>
+  <nav>
+    <app-button
+      ctaText="toggle page content"
+      (buttonClick)="togglePageContent()"
+    ></app-button>
+  </nav>
+</header>
+
+  <main class="page-container">
+    <app-image-view [isDisplayed]="shown"></app-image-view>
+    <app-data-view [isDisplayed]="notShown"></app-data-view>
+  </main>
+
+
+<footer>
+  <h3>This page is a presentation of frontend developer Suk-Be</h3>
+  <ul>
+    <li>IT Exercise Task #9</li>
+    <li>„Frontend Web Application for a list of products“</li>
+  </ul>
+</footer>

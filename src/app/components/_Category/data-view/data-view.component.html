@@ -1,0 +1,18 @@
+<ul *ngIf="isDisplayed">
+  <li *ngFor="let category of categories">
+    <span>
+      <div *ngFor="let article of category.articles" class="article-wrapper">
+        <h2 class="article-headline">
+          {{ category.name }}
+        </h2>
+        <span  class="article-image">
+            <img *ngIf="article" src="{{ article.image }}" />
+        </span>
+        <span class="article-price">{{ article.price }} Eur</span>
+        <span class="article-shortDescription">{{
+          article.shortDescription
+        }}</span>
+      </div>
+    </span>
+  </li>
+</ul>

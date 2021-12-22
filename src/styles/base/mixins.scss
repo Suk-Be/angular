@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+@mixin container(
+  $mobile: $mobileBP, 
+  $tablet: $tabletBP, 
+  $desktop: $desktopBP) {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+@mixin img(
+  $mobile: $mobileBP, 
+  $tablet: $tabletBP) {
+  
+  img {
+    max-height: 5rem;
+    max-width: 5rem;
+  }
+  
+  @media screen and (min-width: $mobile) {
+    img {
+      max-height: 5.3125rem;
+      max-width: 5.3125rem;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    img {
+      max-height: 7.8125rem;
+      max-width: 7.8125rem;
+    }
+  }
+}
+
+@mixin opacity($lighter: $opacity) {
+  opacity: $lighter;
+}
+
+@mixin transition(
+  $properties: $transitionProperties,
+  $time: $transitionTime,
+  $timing: $transitionTiming
+) {
+  transition: $properties $time $timing;
+}
+
+@mixin center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin a11y() {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

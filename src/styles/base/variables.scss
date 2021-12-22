@@ -1,0 +1,38 @@
+// breakpoints
+$mobileBP: 360px;
+$tabletBP: 768px;
+$desktopBP: 1260px;
+
+// colors
+$black: #000;
+$darkerGray: #212529;
+$darkGray: #333;
+$gray: #f3f3f3;
+$green: #82be3c;
+$white: #fff;
+
+// Font Variables
+$roboto: 'Roboto', sans-serif;   
+$thin: 100;
+$medium: 500;
+$bold: 900;
+
+$baseColor: $darkerGray;
+$fontSize: 1rem;
+$lineHeight: 1.5;
+
+// BG
+$contentBG: $white;
+$headlineBG: $green;
+$navbarBG: $darkGray;
+$pageBG: $gray;
+
+// styling property constants
+$borderRadius: .1875rem;
+$opacity: 0.6;
+$transitionProperties: all; 
+$transitionTime: .25s;
+$transitionTiming: ease-in-out;
+
+// gaps
+$baseGap: 1rem;
